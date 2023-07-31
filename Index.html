@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Color Picker API</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <form action="#" method="POST" id="heading-form">
+                <input type="color" value="#f55a5a" id="color-picker">
+                <select name="scheme" id="scheme-picker">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button>Get color scheme</button>
+            </form>
+        </header>
+        <!-- Container for columns with colors fetched from the API -->
+        <div id="color-container">
+        </div>
+        <footer>
+        </footer>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

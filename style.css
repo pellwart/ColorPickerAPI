@@ -1,0 +1,158 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 612px;
+    -webkit-box-shadow: 0px 1px 15px 1px rgba(181, 181, 191, 1);
+    -moz-box-shadow: 0px 1px 15px 1px rgba(181, 181, 191, 1);
+    box-shadow: 0px 1px 15px 1px rgba(181, 181, 191, 1);
+}
+
+#heading-form {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+input,
+button,
+select {
+    height: 2.7em;
+    border: 1px solid darkgray;
+    cursor: pointer;
+}
+
+select {
+    width: 300px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 15px;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #f5f5f5; 
+    color: #333; 
+    border-color: #bbb; 
+    font-weight: bolder;
+}
+
+#color-container,
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#color-col {
+    flex-basis: 20%;
+    height: 80vh;
+}
+
+#footer-col {
+    flex-basis: 20%;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+p {
+    color: #fff;    
+    text-align: center;
+    margin-top: 6rem;
+    display: none;
+}
+
+/* Mobile media*/
+@media only screen and (max-width: 900px) {
+    button {
+        outline: none;
+    }
+
+    button:focus {
+        background-color: #fff; 
+        color: #333; 
+        border-color: #bbb; 
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 650px) {
+    #heading-form {
+        padding: 1em 0;
+        flex-direction: column;
+        gap: 0.6em;
+        align-items: center;
+    }
+
+    #color-container,
+    footer {
+        flex-direction: column;
+    }
+
+    #container {
+        width: 100%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        min-width: 120px;
+    }
+
+    #color-col {
+        flex-basis: 25vh;
+    }
+
+   footer {
+        display: none;
+    }
+
+    input,
+    button,
+    select {
+        height: 4.7em;
+        border: 1px solid darkgray;
+        width: 90%;
+        border-radius: 0%;
+    }
+
+    p {
+        display: block;
+    }
+}
+
+  /* Tablet media*/
+  @media only screen and (min-width:651px) and (max-width:900px) {
+    #heading-form {
+        padding: 1em 0;
+        flex-direction: column;
+        gap: 0.6em;
+        align-items: center;
+    }
+
+    input,
+    button,
+    select {
+        height: 4.7em;
+        border: 1px solid darkgray;
+        width: 90%;
+        border-radius: 0%;
+    }
+}
